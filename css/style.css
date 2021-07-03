@@ -1,0 +1,337 @@
+/**********************Central Style*******************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: hsl(0, 0%, 100%);
+    background: hsl(218, 28%, 13%);
+  }
+
+body {
+    background-color: hsl(219, 30%, 18%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans";
+    z-index: -999
+}
+
+h1, h2, h3, h4, h5, h6, header, .navbar, .cta {
+    font-family: "raleway";
+    font-weight: 700;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  main {
+    position: relative;
+    padding-bottom: 200px;
+  }
+
+  /*****************************End Of Central Style*************************************************/
+
+/*********************************** navigation bar style **********************************/
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 73px 80px;
+    background: hsl(217, 28%, 15%);
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+
+ 
+  
+  .menu :not(:last-child) {
+    padding-right: 56px;
+  }
+
+  /***********************End Of Navigation bar style****************************************************/
+ 
+  /* header session */
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(217, 28%, 15%) url("images/bg-curvy-desktop.svg") bottom
+      no-repeat;
+    background-size: 100% 270px;
+  }
+  
+  .header img {
+    width: 742px;
+    height: 538px;
+  }
+  
+  .header h1 {
+    width: 742px;
+    margin: 46px;
+  }
+  
+  .header p {
+    width: 742px;
+    font-size: 22px;
+    padding: 0 30px;
+  }
+  
+  .cta {
+    color: hsl(0, 0%, 100%);
+    width: 280px;
+    padding: 20px 0;
+    border-radius: 50px;
+    margin: 30px 0;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border: none;
+  }
+  
+  /****************Header session end***********************************************************/
+
+
+  /***********************************features section ****************************************/
+.features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 94px 150px;
+    margin: 130px 0;
+    padding: 0 280px;
+  }
+  
+  .featuresContent {
+    text-align: center;
+  }
+  
+  .feature h3 {
+    margin: 25px 0 12px 0;
+  }
+
+/*************************Features end**************************/
+
+/******************************************Focus*******************************/
+
+.focus{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+  }
+  
+  .focusimg img {
+    height: 460px;
+    width: auto;
+    margin-right: 45px;
+  }
+  
+  .focusContent :not(:last-child) {
+    margin-bottom: 25px;
+  }
+  
+  .content-link {
+    justify-content: space-around;
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+  }
+  
+  .content-link img {
+    vertical-align: middle;
+    margin-left: 3px;
+  }
+
+
+  /**********************End of Focus Style**********************************************/
+
+  /***********************************Testimonials*******************************/
+
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 140px;
+  }
+  
+  .testimonialContent {
+    background: hsl(219, 30%, 18%);
+    padding: 45px 40px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .testimonialContent:first-child::before {
+    content: url("images/bg-quotes.png");
+    position: absolute;
+    top: -35px;
+    left: -15px;
+    z-index: -1;
+  }
+  
+  .testimonialContent p {
+    margin-bottom: 25px;
+  }
+  
+  .reviewer {
+    display: flex;
+  }
+  .reviewer img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .name h4 {
+    font-size: 10px;
+  }
+  
+  .name p {
+    font-size: 8px;
+  }
+  /***************End TEstimonial****************************/
+
+  /*********************Form*************************/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--intro-email-bg);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 50px 74px 40px 74px;
+  border-radius: 5px;
+  bottom: -155px;
+}
+
+.form h2 {
+  margin-bottom: 30px;
+}
+
+.form p {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 482px;
+  height: 50px;
+  padding: 20px 47px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+input[type="submit"] {
+  margin: 0;
+}
+
+form {
+  display: flex;
+  align-content: center;
+}
+
+::placeholder {
+  opacity: 0.4;
+}
+/*****************END FORM************************/
+
+/* footer */
+footer {
+  background: hsl(216, 53%, 9%);
+  padding: 200px 80px 80px 100px;
+  display: grid;
+  grid-template-columns: 4fr 3fr 1fr 1fr 2fr;
+  grid-template-rows: auto;
+  column-gap: 70px;
+  grid-template-areas:
+    "logo . . . ."
+    "location  contact links more-links social-icons";
+}
+
+.contact-logo {
+  grid-area: logo;
+  margin-bottom: 35px;
+}
+
+.location {
+  grid-area: location;
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
+
+.location span {
+  padding-left: 35px;
+}
+
+.contact-info {
+  grid-area: contact;
+}
+
+.contact-info p {
+  margin-bottom: 26px;
+}
+
+.contact-info img {
+  margin-right: 24px;
+}
+
+.links {
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.links a {
+  margin-bottom: 24px;
+}
+
+.extra-links {
+  grid-area: more-links;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.extra-links a {
+  margin-bottom: 24px;
+}
+
+.social {
+  grid-area: social-icons;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social i {
+  font-size: 30px;
+}
