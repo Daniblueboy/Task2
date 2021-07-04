@@ -45,6 +45,7 @@ a {
   main {
     position: relative;
     padding-bottom: 200px;
+    background-color:hsl(218, 28%, 13%)
   }
 
   /*****************************End Of Central Style*************************************************/
