@@ -180,7 +180,7 @@ a {
   }
   
   .testimonialContent {
-    background: hsl(219, 30%, 18%);
+    background: hsl(230, 30%, 18%);
     padding: 45px 40px;
     border-radius: 5px;
     position: relative;
@@ -224,7 +224,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--intro-email-bg);
+  background: hsl(217, 28%, 15%);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -275,12 +275,12 @@ footer {
   grid-template-rows: auto;
   column-gap: 70px;
   grid-template-areas:
-    "logo . . . ."
-    "location  contact links more-links social-icons";
+    "contact-logo . . . ."
+    "location  contact-info links extra-links social";
 }
 
 .contact-logo {
-  grid-area: logo;
+  grid-area: contact-logo;
   margin-bottom: 35px;
 }
 
@@ -295,7 +295,7 @@ footer {
 }
 
 .contact-info {
-  grid-area: contact;
+  grid-area: contact-info;
 }
 
 .contact-info p {
@@ -317,7 +317,7 @@ footer {
 }
 
 .extra-links {
-  grid-area: more-links;
+  grid-area: extra-links;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -327,7 +327,7 @@ footer {
 }
 
 .social {
-  grid-area: social-icons;
+  grid-area: social;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
