@@ -16,7 +16,7 @@ html {
     color: hsl(0, 0%, 100%);
     background: hsl(218, 28%, 13%);
   }
-
+  
 body {
     background-color: hsl(219, 30%, 18%);
     color: hsl(0, 0%, 100%);
@@ -84,7 +84,7 @@ a {
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    background: hsl(217, 28%, 15%) url("images/bg-curvy-desktop.svg") bottom
+    background: hsl(217, 28%, 15%) url("/images/bg-curvy-desktop.svg") bottom
       no-repeat;
     background-size: 100% 270px;
   }
@@ -158,8 +158,8 @@ a {
   
   .content-link {
     justify-content: space-around;
-    color: var(--cyan);
-    border-bottom: 1px solid var(--cyan);
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
   }
   
   .content-link img {
@@ -187,7 +187,7 @@ a {
   }
   
   .testimonialContent:first-child::before {
-    content: url("images/bg-quotes.png");
+    content: url("/images/bg-quotes.png");
     position: absolute;
     top: -35px;
     left: -15px;
