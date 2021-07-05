@@ -91,17 +91,17 @@ a {
   }
   
   .header img {
-    width: 742px;
+    width: 100%;
     height: 538px;
   }
   
   .header h1 {
-    width: 742px;
+    width: max-width 742px;
     margin: 46px;
   }
   
   .header p {
-    width: 742px;
+    width: max-width 742px;
     font-size: 22px;
     padding: 0 30px;
   }
@@ -335,4 +335,8 @@ footer {
 
 .social i {
   font-size: 30px;
+}
+
+@media (max-width: 375px){
+
 }
